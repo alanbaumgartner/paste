@@ -130,13 +130,13 @@ mod test_to_snake {
         };
     }
 
-    m!(ThisIsButATest);
+    m!(ThisIsButA1Test2);
 
     #[test]
     fn test_to_snake() {
-        assert_eq!(DEFAULT_SNAKE, "this_is_but_a_test");
-        assert_eq!(LOWER_SNAKE, "this_is_but_a_test");
-        assert_eq!(UPPER_SNAKE, "THIS_IS_BUT_A_TEST");
+        assert_eq!(DEFAULT_SNAKE, "this_is_but_a_1_test_2");
+        assert_eq!(LOWER_SNAKE, "this_is_but_a_1_test_2");
+        assert_eq!(UPPER_SNAKE, "THIS_IS_BUT_A_1_TEST_2");
     }
 }
 

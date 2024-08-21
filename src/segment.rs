@@ -184,7 +184,7 @@ pub(crate) fn paste(segments: &[Segment]) -> Result<String> {
                         let mut acc = String::new();
                         let mut prev = '_';
                         for ch in last.chars() {
-                            if ch.is_uppercase() && prev != '_' {
+                            if (ch.is_uppercase() || ch.is_ascii_digit()) && prev != '_' {
                                 acc.push('_');
                             }
                             acc.push(ch);
